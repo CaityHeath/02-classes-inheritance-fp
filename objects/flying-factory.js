@@ -8,8 +8,8 @@ const FlyingVehicle = () => ({
 
   land: () => {
     return 'On the ground';
-  }
-})
+  },
+});
 
 function Airplane(name) {
   let airplane = Object.assign(
@@ -19,7 +19,7 @@ function Airplane(name) {
     FlyingVehicle()
   );
   return airplane;
-};
+}
 
 function Motorcycle(name){
   let helicopter = Object.assign(
@@ -28,14 +28,14 @@ function Motorcycle(name){
     {pilot: 'Hanna'},
     FlyingVehicle(),
     {hover}
-  )
+  );
 
   function hover() { 
     return 'Phrrr!'; 
   }
 
   return helicopter;
-};
+}
 
 module.exports = {Airplane, Motorcycle};
 

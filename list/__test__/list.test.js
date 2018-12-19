@@ -37,13 +37,12 @@ describe('shift', () => {
 
 describe('unshift', () => {
  
- it('adds a value to the first index in an array', () => {
-  let stuff = new List();
-  stuff.push('a');
-  stuff.push('b');
-  stuff.unshift('z');
-  expect(stuff.length).toEqual(3);
-  expect(stuff.data[0]).toEqual('z');
-
+  it('adds a value to the first index in an array', () => {
+    let stuff = new List();
+    stuff.push('a');
+    stuff.push('b');
+    stuff.unshift('z');
+    expect(stuff.length).toEqual(3);
+    expect(stuff.data[0]).toEqual('z');
   });
 });

@@ -8,8 +8,8 @@ const Vehicle = () => ({
 
   stop: () => {
     return 'Stopping';
-  }
-})
+  },
+});
 
 function Car(name) {
   let car = Object.assign(
@@ -19,7 +19,7 @@ function Car(name) {
     Vehicle()
   );
   return car;
-};
+}
 
 function Motorcycle(name){
   let motorcycle = Object.assign(
@@ -28,14 +28,14 @@ function Motorcycle(name){
     {wheels: 2},
     Vehicle(),
     {wheelie}
-  )
+  );
 
   function wheelie() { 
     return 'Wheee!'; 
   }
 
   return motorcycle;
-};
+}
 
 module.exports = {Car, Motorcycle};
 

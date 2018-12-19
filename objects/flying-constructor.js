@@ -8,7 +8,7 @@ const FlyingVehicle = function(name, pilot) {
   },
   this.land = function() {
     return 'On the ground';
-  }
+  };
 };
 
 FlyingVehicle.prototype.fly = () => {

@@ -8,8 +8,8 @@ const SeaCreature = () => ({
 
   mate: () => {
     return 'makin baby sea creatures';
-  }
-})
+  },
+});
 
 function Fish(name) {
   let Fish = Object.assign(
@@ -19,7 +19,7 @@ function Fish(name) {
     SeaCreature()
   );
   return Fish;
-};
+}
 
 function Lobster(name){
   let lobster = Object.assign(
@@ -28,14 +28,14 @@ function Lobster(name){
     {fins: 1},
     SeaCreature(),
     {run}
-  )
+  );
 
   function run() { 
     return 'Whee!'; 
   }
 
   return lobster;
-};
+}
 
 module.exports = {Fish, Lobster};
 

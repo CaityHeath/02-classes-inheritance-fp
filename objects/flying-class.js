@@ -18,16 +18,16 @@ class FlyingVehicle {
 class Airplane extends FlyingVehicle{
   constructor(name){
     super(name, 'emelia');
-  };
+  }
 }
 
 class Helicopter extends FlyingVehicle{
   constructor(name){
     super(name, 'Hanna');
-  };
+  }
   hover(){
     return 'Wheee!';
-  };
+  }
 } 
 
 module.exports = {Airplane, Helicopter};

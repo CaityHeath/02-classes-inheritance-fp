@@ -18,16 +18,16 @@ class SeaCreature {
 class Fish extends SeaCreature{
   constructor(name){
     super(name, 2);
-  };
+  }
 }
 
 class Lobster extends SeaCreature{
   constructor(name){
     super(name, 1);
-  };
+  }
   run(){
     return 'Wheee!';
-  };
+  }
 } 
 
 module.exports = {Fish, Lobster};

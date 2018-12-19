@@ -8,7 +8,7 @@ const Vehicle = function(name, wheels) {
   },
   this.stop = function() {
     return 'Stopping';
-  }
+  };
 };
 
 Vehicle.prototype.drive = () => {

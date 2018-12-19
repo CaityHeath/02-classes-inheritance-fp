@@ -8,7 +8,7 @@ const SeaCreature = function(name, fins) {
   },
   this.mate = function() {
     return 'makin baby sea creature';
-  }
+  };
 };
 
 SeaCreature.prototype.eat = () => {
