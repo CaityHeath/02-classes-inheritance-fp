@@ -5,7 +5,8 @@
 //const Vehicle = require('./class.js');
 // const Vehicle = require('./factory.js');
 //const FlyingVehicle = require('./flying-constructor.js');
-const FlyingVehicle = require('./flying-factory.js');
+//const FlyingVehicle = require('./flying-factory.js');
+const SeaCreature = require('./sea-factory.js');
 
 
 
@@ -21,3 +22,9 @@ console.log(memphisbelle.name, memphisbelle.fly(), memphisbelle.land());
 
 const mister = new FlyingVehicle.Helicopter('boeing');
 console.log(mister.name, mister.fly(), mister.land(), mister.hover());
+
+const nemo = new SeaCreature.Fish('clown');
+console.log(nemo.name, nemo.fins, nemo.eat(), nemo.mate());
+
+const red = new SeaCreature.Lobster('red lobster');
+console.log(red.name, red.fins, red.eat(), red.mate(), red.run());
