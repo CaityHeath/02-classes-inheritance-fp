@@ -2,9 +2,9 @@
 
 const FlyingVehicle = require('../flying-constructor.js');
 
-describe('Flying Vehicles', () => {
+xdescribe('Flying Vehicles', () => {
 
-  describe('plane', () => {
+  xdescribe('plane', () => {
 
     let airplane = new FlyingVehicle.Airplane('bird');
 
@@ -23,7 +23,7 @@ describe('Flying Vehicles', () => {
 
   });
 
-  describe('Helicopter', () => {
+  xdescribe('Helicopter', () => {
 
     let helicopter = new FlyingVehicle.Helicopter('chop');
 
