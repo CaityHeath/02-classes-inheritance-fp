@@ -1,8 +1,42 @@
 'use strict';
 
-function CarFactory() {
-}
 
-module.exports = CarFactory;
+const Vehicle = () => ({
+  drive: () =>{
+    return 'Moving Foreward';
+  },
+
+  stop: () => {
+    return 'Stopping';
+  }
+})
+
+function Car(name) {
+  let car = Object.assign(
+    {},
+    {name},
+    {wheels: 4},
+    Vehicle()
+  );
+  return car;
+};
+
+function Motorcycle(name){
+  let motorcycle = Object.assign(
+    {},
+    {name},
+    {wheels: 2},
+    Vehicle(),
+    {wheelie}
+  )
+
+  function wheelie() { 
+    return 'Wheee!'; 
+  }
+
+  return motorcycle;
+};
+
+module.exports = {Car, Motorcycle};
 
 
