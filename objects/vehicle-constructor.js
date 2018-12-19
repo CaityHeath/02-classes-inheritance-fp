@@ -3,6 +3,12 @@
 const Vehicle = function(name, wheels) {
   this.name = name;
   this.wheels = wheels;
+  this.drive = function() {
+    return 'Moving Forward';
+  },
+  this.stop = function() {
+    return 'Stopping';
+  };
 };
 
 Vehicle.prototype.drive = () => {
