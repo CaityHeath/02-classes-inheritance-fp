@@ -2,9 +2,9 @@
 
 const SeaCreature = require('../sea-factory.js');
 
-xdescribe('SeaCreatures', () => {
+describe('SeaCreatures', () => {
 
-  xdescribe('fish', () => {
+  describe('fish', () => {
 
     let fish = new SeaCreature.Fish('nemo');
 
@@ -23,7 +23,7 @@ xdescribe('SeaCreatures', () => {
 
   });
 
-  xdescribe('lobster', () => {
+  describe('lobster', () => {
 
     let lobster = new SeaCreature.Lobster('red');
 

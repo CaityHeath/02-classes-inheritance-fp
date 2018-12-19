@@ -2,9 +2,9 @@
 
 const Vehicle = require('../vehicle-factory.js');
 
-xdescribe('Vehicles', () => {
+describe('Vehicles', () => {
 
-  xdescribe('Car', () => {
+  describe('Car', () => {
 
     let car = new Vehicle.Car('foo');
 
@@ -26,7 +26,7 @@ xdescribe('Vehicles', () => {
 
   });
 
-  xdescribe('Motorcycle', () => {
+  describe('Motorcycle', () => {
 
     let motorcycle = new Vehicle.Motorcycle('foo');
 
